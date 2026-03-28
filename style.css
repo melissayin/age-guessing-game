@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+h1 {
+    color: #2a4d8f;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td, th {
+    border: 1px solid #aaa;
+    padding: 8px 12px;
+}
+
+.group-row {
+    margin-bottom: 10px;
+}
