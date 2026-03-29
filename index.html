@@ -5,31 +5,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<center><h1>Age Guessing Game</h1>
+<p>Guess the age of the person in the image shown by Mr. Hays.<br> Your score is 21 - the width of your interval.</p>
+</center>
 
-<h1>Age Guessing Game</h1>
+<div class="game-layout">
 
-<div id="setup">
-    <h2>Setup</h2>
-    <label>Number of groups:</label>
-    <input type="number" id="numGroups" min="1" value="3">
-    <button onclick="createGroups()">Create Groups</button>
-</div>
+    <div class="left-panel">
+        <div id="setup">
+            <h2>Setup</h2>
+            <label>Number of groups:</label>
+            <input type="number" id="numGroups" min="1" value="3">
+            <br><br>
+            <button onclick="createGroups()">Create Groups</button>
+        </div>
 
-<div id="game" style="display:none;">
+        <div id="game" style="display:none;">
+            <h2>Group Intervals</h2>
+            <div id="groupInputs"></div>
 
-    <h3>Group Intervals</h3>
-    <div id="groupInputs"></div>
+            <h2>Round Answer</h2>
+            <label>True value:</label>
+            <input type="number" id="trueValue">
+            <br><br>
+            <button onclick="scoreRound()">Score Round</button>
+        </div>
+    </div>
 
-    <h2>Round Answer</h2>
-    <label>True value:</label>
-    <input type="number" id="trueValue">
+    <div class="right-panel">
+        <div>
+            <h2>Leaderboard</h2>
+            <table id="leaderboard">
+                <tr><th>Group</th><th>Score</th></tr>
+            </table>
+        </div>
+    </div>
 
-    <button onclick="scoreRound()">Score Round</button>
-
-    <h2>Leaderboard</h2>
-    <table id="leaderboard">
-        <tr><th>Group</th><th>Score</th></tr>
-    </table>
 </div>
 
 <script src="script.js"></script>

@@ -20,3 +20,27 @@ td, th {
 .group-row {
     margin-bottom: 10px;
 }
+
+
+.game-layout {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.left-panel {
+    width: 450px;
+}
+
+
+.right-panel {
+    width: 250px;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
